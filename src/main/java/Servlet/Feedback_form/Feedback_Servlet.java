@@ -30,12 +30,12 @@ public class Feedback_Servlet extends HttpServlet {
 		writer.print("feedback servlet working");
 		System.out.println("Hello");
 	}
-	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-	    resp.setContentType("text/html");
-	    PrintWriter writer = resp.getWriter();
-	    writer.print("GET request working for FeedbackServlet");
-	}
+	// @Override
+//	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//	    resp.setContentType("text/html");
+//	    PrintWriter writer = resp.getWriter();
+//	    writer.print("GET request working for FeedbackServlet");
+//	}
 
 
 }
