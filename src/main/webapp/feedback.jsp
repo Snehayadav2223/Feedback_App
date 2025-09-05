@@ -29,12 +29,12 @@
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">phone number</label>
-    <input placeholder="enter here" type="text" class="form-control" id="exampleInputPassword1">
+    <input name="phone" placeholder="enter here" type="text" class="form-control" id="exampleInputPassword1">
   </div>
   
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">your feedback message</label>
-   <textarea rows="10" placeholder="enter here" class="form-control" cols=""></textarea>
+   <textarea name = "feedback_message" rows="10" placeholder="enter here" class="form-control" cols=""></textarea>
   </div>
   
  	<div class="container text-center">

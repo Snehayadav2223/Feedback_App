@@ -19,6 +19,10 @@ public class Feedback_Servlet extends HttpServlet {
 		
 		// to get the form data
 		
+		String email = req.getParameter("email");
+		String phone = req.getParameter("phone");
+		String feedbackMessage = req.getParameter("feedback_message");
+		
 		//form data process
 		
 		// provide responses
@@ -27,8 +31,17 @@ public class Feedback_Servlet extends HttpServlet {
 		PrintWriter writer =resp.getWriter();
 		
 		
-		writer.print("feedback servlet working");
+		writer.print("<h1>feedback servlet working</h1>");
 		System.out.println("Hello");
+		
+		writer.println("""
+				
+				<h2> Your form details that you have submitted</h2>
+				<h3> Email adress %s </h3>
+				<h3>Phone number %s</h3>
+				<h3> Feedback message %s </h3>
+				
+				""".formatted(email,phone,feedbackMessage));
 	}
 	// @Override
 //	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
